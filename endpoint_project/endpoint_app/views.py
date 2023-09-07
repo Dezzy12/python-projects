@@ -6,8 +6,8 @@ def endpoint_view(request):
     track = request.GET.get('track')
     current_day = datetime.now().utcnow().strftime('%A')
     utc_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
-    github_file_url = "https://github.com/username/repo/blob/main/file_name.ext"
-    github_repo_url = "https://github.com/username/repo"
+    github_file_url = "https://github.com/Dezzy12/python-projects/blob/master/endpoint_project/endpoint_app/views.py"
+    github_repo_url = "https://github.com/Dezzy12/python-projects/tree/master/endpoint_project"
 
     response={
         "slack_name": slack_name,
